@@ -1,0 +1,59 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 720,
+      "width": 737
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "CylindricalTank"
+        },
+        "position": {
+          "basis": "160px",
+          "grow": 2,
+          "shrink": 2
+        },
+        "props": {
+          "value": 100
+        },
+        "type": "ia.display.cylindrical-tank"
+      },
+      {
+        "meta": {
+          "name": "CylindricalTank_0"
+        },
+        "position": {
+          "basis": "160px",
+          "grow": 1
+        },
+        "props": {
+          "value": 50
+        },
+        "type": "ia.display.cylindrical-tank"
+      },
+      {
+        "meta": {
+          "name": "CylindricalTank_1"
+        },
+        "position": {
+          "basis": "160px",
+          "shrink": 0
+        },
+        "type": "ia.display.cylindrical-tank"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "alignItems": "center",
+      "justify": "center"
+    },
+    "type": "ia.container.flex"
+  }
+}

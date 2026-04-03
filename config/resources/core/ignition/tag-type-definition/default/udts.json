@@ -1,0 +1,32 @@
+[
+  {
+    "name": "New Type",
+    "typeId": null,
+    "parameters": {
+      "numStationTag": {
+        "dataType": "Integer",
+        "value": null
+      }
+    },
+    "tagType": "UdtType",
+    "tags": [
+      {
+        "valueSource": "memory",
+        "name": "a_int",
+        "tagType": "AtomicTag"
+      },
+      {
+        "valueSource": "memory",
+        "dataType": "String",
+        "name": "b_string",
+        "tagType": "AtomicTag"
+      },
+      {
+        "valueSource": "memory",
+        "dataType": "Boolean",
+        "name": "c_bool",
+        "tagType": "AtomicTag"
+      }
+    ]
+  }
+]

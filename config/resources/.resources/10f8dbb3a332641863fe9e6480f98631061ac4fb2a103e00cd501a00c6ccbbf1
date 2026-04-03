@@ -1,0 +1,63 @@
+[
+  {
+    "name": "New Type",
+    "typeId": null,
+    "tagType": "UdtType",
+    "tags": [
+      {
+        "name": "Station",
+        "tagType": "Folder",
+        "tags": [
+          {
+            "valueSource": "opc",
+            "opcItemPath": "ns\u003d1;s\u003d[BIP_Simulator]Station_1/pump_fault",
+            "dataType": "Boolean",
+            "name": "pump_fault",
+            "tagType": "AtomicTag",
+            "opcServer": "Ignition OPC UA Server"
+          },
+          {
+            "valueSource": "opc",
+            "opcItemPath": "ns\u003d1;s\u003d[BIP_Simulator]Station_1/temperature",
+            "dataType": "Float8",
+            "name": "temperature",
+            "tagType": "AtomicTag",
+            "opcServer": "Ignition OPC UA Server"
+          },
+          {
+            "valueSource": "opc",
+            "opcItemPath": "ns\u003d1;s\u003d[BIP_Simulator]Station_1/valve_flow",
+            "dataType": "Float8",
+            "name": "valve_flow",
+            "tagType": "AtomicTag",
+            "opcServer": "Ignition OPC UA Server"
+          },
+          {
+            "valueSource": "opc",
+            "opcItemPath": "ns\u003d1;s\u003d[BIP_Simulator]Station_1/viscosity",
+            "dataType": "Float8",
+            "name": "viscosity",
+            "tagType": "AtomicTag",
+            "opcServer": "Ignition OPC UA Server"
+          },
+          {
+            "valueSource": "opc",
+            "opcItemPath": "ns\u003d1;s\u003d[BIP_Simulator]Station_1/ph",
+            "dataType": "Float8",
+            "name": "ph",
+            "tagType": "AtomicTag",
+            "opcServer": "Ignition OPC UA Server"
+          },
+          {
+            "valueSource": "opc",
+            "opcItemPath": "ns\u003d1;s\u003d[BIP_Simulator]Station_1/tank_capacity",
+            "dataType": "Float8",
+            "name": "tank_capacity",
+            "tagType": "AtomicTag",
+            "opcServer": "Ignition OPC UA Server"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,5 @@
+def handleTimerEvent():
+	a = system.tag.readBlocking('[default]Station_11/ph')
+	
+	system.tag.writeBlocking('[default]NT', a)
+	

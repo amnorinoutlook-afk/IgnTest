@@ -1,0 +1,260 @@
+{
+  "custom": {},
+  "params": {
+    "numStation": "value"
+  },
+  "propConfig": {
+    "params.numStation": {
+      "paramDirection": "input",
+      "persistent": true
+    }
+  },
+  "props": {
+    "defaultSize": {
+      "height": 541,
+      "width": 543
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "events": {
+          "dom": {
+            "onClick": {
+              "config": {
+                "script": "\tself.getSibling(\"Pump\").props.state \u003d \"running\""
+              },
+              "scope": "G",
+              "type": "script"
+            }
+          }
+        },
+        "meta": {
+          "name": "Button"
+        },
+        "position": {
+          "height": 34,
+          "rotate": {
+            "anchor": "75% 75%"
+          },
+          "width": 80,
+          "x": 9,
+          "y": 24
+        },
+        "type": "ia.input.button"
+      },
+      {
+        "events": {
+          "dom": {
+            "onClick": {
+              "config": {
+                "script": "\tself.getSibling(\"Pump\").props.state \u003d \"stopped\""
+              },
+              "scope": "G",
+              "type": "script"
+            }
+          }
+        },
+        "meta": {
+          "name": "Button_0"
+        },
+        "position": {
+          "height": 34,
+          "width": 80,
+          "x": 101,
+          "y": 24.000003814697266
+        },
+        "type": "ia.input.button"
+      },
+      {
+        "meta": {
+          "name": "Pump"
+        },
+        "position": {
+          "height": 100,
+          "width": 100,
+          "x": 64.00000762939453,
+          "y": 147
+        },
+        "propConfig": {
+          "props.state": {
+            "binding": {
+              "config": {
+                "expression": "if ({[default]Station_1/c_bool} \u003d 1, \"running\", \"stopped\")"
+              },
+              "type": "expr"
+            }
+          }
+        },
+        "scripts": {
+          "customMethods": [],
+          "extensionFunctions": null,
+          "messageHandlers": [
+            {
+              "messageType": "reft",
+              "pageScope": true,
+              "script": "\t# implement your handler here\n\tif self.props.state \u003d\u003d \"running\":\n\t\tself.props.state \u003d \"stopped\"\n\telse: \n\t\tself.props.state \u003d \"running\"",
+              "sessionScope": false,
+              "viewScope": false
+            }
+          ]
+        },
+        "type": "ia.symbol.pump"
+      },
+      {
+        "meta": {
+          "name": "Label"
+        },
+        "position": {
+          "height": 32,
+          "rotate": {
+            "anchor": "25% 50%"
+          },
+          "width": 192,
+          "x": 18,
+          "y": 82
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "expression": "\"Station_\" + {view.params.numStation}"
+              },
+              "type": "expr"
+            }
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "events": {
+          "dom": {
+            "onClick": {
+              "config": {
+                "script": "\t\n\ta \u003d \u0027[default]Station_\u0027 + str(self.view.params.numStation) + \u0027/c_bool\u0027\n\t\t\n\tsystem.tag.writeBlocking(\u0027[default]Station_1/c_bool\u0027, 1)"
+              },
+              "scope": "G",
+              "type": "script"
+            }
+          }
+        },
+        "meta": {
+          "name": "Button_1"
+        },
+        "position": {
+          "height": 73,
+          "width": 80,
+          "x": 197,
+          "y": 74
+        },
+        "type": "ia.input.button"
+      },
+      {
+        "events": {
+          "dom": {
+            "onClick": {
+              "config": {
+                "script": "\tsystem.tag.writeBlocking(\u0027[default]Station_1/c_bool\u0027, 0)"
+              },
+              "scope": "G",
+              "type": "script"
+            }
+          }
+        },
+        "meta": {
+          "name": "Button_2"
+        },
+        "position": {
+          "height": 73,
+          "width": 80,
+          "x": 195,
+          "y": 174
+        },
+        "type": "ia.input.button"
+      },
+      {
+        "events": {
+          "dom": {
+            "onClick": {
+              "config": {
+                "script": "\tsystem.perspective.sendMessage(\u0027reft\u0027)"
+              },
+              "scope": "G",
+              "type": "script"
+            }
+          }
+        },
+        "meta": {
+          "name": "Button_3"
+        },
+        "position": {
+          "height": 34,
+          "width": 80,
+          "x": 210.00001525878906,
+          "y": 15
+        },
+        "type": "ia.input.button"
+      },
+      {
+        "events": {
+          "dom": {
+            "onClick": {
+              "config": {
+                "script": "\tsystem.perspective.sendMessage(\u0027reft\u0027)"
+              },
+              "scope": "G",
+              "type": "script"
+            }
+          }
+        },
+        "meta": {
+          "name": "Button_4"
+        },
+        "position": {
+          "height": 34,
+          "width": 80,
+          "x": 144,
+          "y": 321
+        },
+        "type": "ia.input.button"
+      },
+      {
+        "meta": {
+          "name": "Label_0"
+        },
+        "position": {
+          "height": 34,
+          "rotate": {
+            "anchor": "25% 129%"
+          },
+          "width": 173,
+          "x": 155,
+          "y": 401
+        },
+        "props": {
+          "text": [
+            99
+          ]
+        },
+        "scripts": {
+          "customMethods": [],
+          "extensionFunctions": null,
+          "messageHandlers": [
+            {
+              "messageType": "reft",
+              "pageScope": true,
+              "script": "\t# implement your handler here\n\ta \u003d system.tag.readBlocking(\"[default]Station_1/a_int\");\n\t\n\tself.props.text \u003d a;",
+              "sessionScope": false,
+              "viewScope": false
+            }
+          ]
+        },
+        "type": "ia.display.label"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "type": "ia.container.coord"
+  }
+}

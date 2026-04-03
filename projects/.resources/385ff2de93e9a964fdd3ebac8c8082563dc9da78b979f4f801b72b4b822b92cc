@@ -1,0 +1,5 @@
+def myS(a,b):	
+	a = system.tag.readBlocking('[default]Station_11/ph')
+	c = a + 5
+	return c
+	

@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Station 2",
+    "typeId": "Station",
+    "tagType": "UdtInstance"
+  },
+  {
+    "name": "Station 3",
+    "typeId": "Station",
+    "tagType": "UdtInstance"
+  },
+  {
+    "name": "Station 1",
+    "typeId": "Station",
+    "parameters": {
+      "StNum": {
+        "dataType": "Integer",
+        "value": 1
+      }
+    },
+    "tagType": "UdtInstance"
+  }
+]

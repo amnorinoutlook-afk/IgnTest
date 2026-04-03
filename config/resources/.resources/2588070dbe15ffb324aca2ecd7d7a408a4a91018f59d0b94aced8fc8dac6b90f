@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Station_1",
+    "tagType": "Folder",
+    "tags": [
+      {
+        "value": 99,
+        "name": "",
+        "tagType": "AtomicTag"
+      },
+      {
+        "value": false,
+        "name": "",
+        "tagType": "AtomicTag"
+      }
+    ]
+  },
+  {
+    "valueSource": "memory",
+    "dataType": "Float4",
+    "historyProvider": "ASD",
+    "name": "NT",
+    "historyEnabled": true,
+    "tagType": "AtomicTag"
+  }
+]

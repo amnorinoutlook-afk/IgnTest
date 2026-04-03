@@ -1,0 +1,4 @@
+def myS(a,b):
+	c = a + b
+	return c
+	

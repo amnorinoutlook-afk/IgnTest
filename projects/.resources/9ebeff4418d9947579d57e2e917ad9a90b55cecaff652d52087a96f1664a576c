@@ -1,0 +1,3 @@
+def handleTimerEvent():
+	S1.myS(a, b)
+	

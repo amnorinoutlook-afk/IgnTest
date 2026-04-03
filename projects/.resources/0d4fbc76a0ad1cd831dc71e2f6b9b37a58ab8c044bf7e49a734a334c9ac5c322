@@ -1,0 +1,3 @@
+def handleTimerEvent():
+	system.tag.writeBlocking('[default]NT', 2)
+	

@@ -1,0 +1,4 @@
+def myS(a,b):	
+	c = a[0].value + b
+	return c
+	

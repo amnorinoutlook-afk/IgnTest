@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Station",
+    "typeId": null,
+    "parameters": {
+      "StNum": {
+        "dataType": "Integer",
+        "value": 0
+      }
+    },
+    "tagType": "UdtType",
+    "tags": [
+      {
+        "opcItemPath": {
+          "bindType": "parameter",
+          "binding": "ns\u003d1;s\u003d[BIP_Simulator]Station_{StNum}/ph"
+        },
+        "valueSource": "opc",
+        "dataType": "Float8",
+        "name": "ph",
+        "tagType": "AtomicTag",
+        "opcServer": "Ignition OPC UA Server"
+      },
+      {
+        "opcItemPath": {
+          "bindType": "parameter",
+          "binding": "ns\u003d1;s\u003d[BIP_Simulator]Station_{StNum}/pump_fault"
+        },
+        "valueSource": "opc",
+        "dataType": "Boolean",
+        "name": "pump_fault",
+        "tagType": "AtomicTag",
+        "opcServer": "Ignition OPC UA Server"
+      },
+      {
+        "opcItemPath": {
+          "bindType": "parameter",
+          "binding": "ns\u003d1;s\u003d[BIP_Simulator]Station_{StNum}/tank_capacity"
+        },
+        "valueSource": "opc",
+        "dataType": "Float8",
+        "name": "tank_capacity",
+        "tagType": "AtomicTag",
+        "opcServer": "Ignition OPC UA Server"
+      },
+      {
+        "valueSource": "opc",
+        "opcItemPath": "ns\u003d1;s\u003d[BIP_Simulator]Station_1/temperature",
+        "dataType": "Float8",
+        "name": "temperature",
+        "tagType": "AtomicTag",
+        "opcServer": "Ignition OPC UA Server"
+      },
+      {
+        "valueSource": "opc",
+        "opcItemPath": "ns\u003d1;s\u003d[BIP_Simulator]Station_1/valve_flow",
+        "dataType": "Float8",
+        "name": "valve_flow",
+        "tagType": "AtomicTag",
+        "opcServer": "Ignition OPC UA Server"
+      },
+      {
+        "valueSource": "opc",
+        "opcItemPath": "ns\u003d1;s\u003d[BIP_Simulator]Station_1/viscosity",
+        "dataType": "Float8",
+        "name": "viscosity",
+        "tagType": "AtomicTag",
+        "opcServer": "Ignition OPC UA Server"
+      }
+    ]
+  }
+]

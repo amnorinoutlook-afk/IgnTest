@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Station_3",
+    "typeId": "New Type",
+    "tagType": "UdtInstance"
+  },
+  {
+    "name": "Station_1",
+    "typeId": "New Type",
+    "tagType": "UdtInstance"
+  },
+  {
+    "name": "Station_2",
+    "typeId": "New Type",
+    "tagType": "UdtInstance"
+  }
+]

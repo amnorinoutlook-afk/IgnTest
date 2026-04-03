@@ -1,0 +1,20 @@
+{
+  "scope": "A",
+  "version": 1,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "clock.png"
+  ],
+  "attributes": {
+    "width": 16,
+    "format": "PNG",
+    "lastModification": {
+      "actor": "import",
+      "timestamp": "2025-12-22T21:41:43Z"
+    },
+    "size": 491,
+    "lastModificationSignature": "e33253ca6f50305f6163a005268a3d6b187af95ab5694ed1af7c3cd809b43fe0",
+    "height": 16
+  }
+}

@@ -1,0 +1,4 @@
+def handleTimerEvent():
+	#a = system.tag.readBlocking('[default]Station_11/ph')
+	S1.myS(2, 5)
+	

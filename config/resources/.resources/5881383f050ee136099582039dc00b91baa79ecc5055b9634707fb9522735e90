@@ -1,0 +1,13 @@
+[
+  {
+    "name": "New Instance",
+    "typeId": "Station",
+    "parameters": {
+      "StNum": {
+        "dataType": "Integer",
+        "value": 2
+      }
+    },
+    "tagType": "UdtInstance"
+  }
+]

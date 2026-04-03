@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Station_1",
+    "tagType": "Folder",
+    "tags": [
+      {
+        "value": 99,
+        "name": "",
+        "tagType": "AtomicTag"
+      },
+      {
+        "value": false,
+        "name": "",
+        "tagType": "AtomicTag"
+      }
+    ]
+  },
+  {
+    "valueSource": "memory",
+    "name": "NT",
+    "tagType": "AtomicTag"
+  }
+]

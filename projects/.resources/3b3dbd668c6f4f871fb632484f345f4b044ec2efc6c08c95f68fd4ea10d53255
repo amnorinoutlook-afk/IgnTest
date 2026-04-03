@@ -1,0 +1,122 @@
+{
+  "custom": {},
+  "params": {
+    "stationNumber": 3
+  },
+  "propConfig": {
+    "params.stationNumber": {
+      "paramDirection": "input",
+      "persistent": true
+    }
+  },
+  "props": {
+    "defaultSize": {
+      "height": 394,
+      "width": 401
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "Title"
+        },
+        "position": {
+          "basis": "32px"
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "expression": "\"Station \" + {view.params.stationNumber}"
+              },
+              "type": "expr"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "textAlign": "center"
+          },
+          "textStyle": {
+            "fontSize": "24px",
+            "textAlign": "center"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Alarm banner"
+        },
+        "position": {
+          "basis": "32px"
+        },
+        "propConfig": {
+          "meta.visible": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "indirect",
+                "references": {
+                  "stationNumber": "{view.params.stationNumber}"
+                },
+                "tagPath": "[BIP_Tag_Provider]Station {stationNumber}/pump_fault"
+              },
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "text": "Pump Faulted"
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Vessel"
+        },
+        "position": {
+          "basis": "100px",
+          "grow": 1
+        },
+        "propConfig": {
+          "props.value.value": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "indirect",
+                "references": {
+                  "stationNumber": "{view.params.stationNumber}"
+                },
+                "tagPath": "[BIP_Tag_Provider]Station {stationNumber}/tank_capacity"
+              },
+              "transforms": [
+                {
+                  "formatType": "numeric",
+                  "formatValue": "##.##",
+                  "type": "format"
+                }
+              ],
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "appearance": "mimic",
+          "value": {
+            "displayValueAsPercent": false
+          }
+        },
+        "type": "ia.symbol.vessel"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}

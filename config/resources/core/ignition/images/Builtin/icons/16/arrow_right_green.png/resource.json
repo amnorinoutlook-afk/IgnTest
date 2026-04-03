@@ -1,0 +1,20 @@
+{
+  "scope": "A",
+  "version": 1,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "arrow_right_green.png"
+  ],
+  "attributes": {
+    "width": 16,
+    "format": "PNG",
+    "lastModification": {
+      "actor": "import",
+      "timestamp": "2025-12-22T21:41:43Z"
+    },
+    "size": 314,
+    "lastModificationSignature": "1a58e93d2f732a442ac8d102fde4ec27a63bdf06e2d956d431a4a4cc5e77855a",
+    "height": 16
+  }
+}

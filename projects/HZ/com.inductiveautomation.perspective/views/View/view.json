@@ -1,0 +1,67 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {},
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "Object"
+        },
+        "position": {
+          "height": 272,
+          "width": 296,
+          "x": 76,
+          "y": 54
+        },
+        "props": {
+          "params": {
+            "numStation": 1
+          },
+          "path": "Object"
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "Object_0"
+        },
+        "position": {
+          "height": 272,
+          "width": 296,
+          "x": 454,
+          "y": 138
+        },
+        "props": {
+          "params": {
+            "numStation": 2
+          },
+          "path": "Object"
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "Object_1"
+        },
+        "position": {
+          "height": 272,
+          "width": 296,
+          "x": 216,
+          "y": 454
+        },
+        "props": {
+          "params": {
+            "numStation": 3
+          },
+          "path": "Object"
+        },
+        "type": "ia.display.view"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "type": "ia.container.coord"
+  }
+}
