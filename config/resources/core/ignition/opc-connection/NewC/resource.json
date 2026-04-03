@@ -1,0 +1,14 @@
+{
+  "scope": "A",
+  "description": "",
+  "version": 1,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "config.json"
+  ],
+  "attributes": {
+    "uuid": "ce4174e0-d0e4-4fc5-8ba5-98d3e0adfd22",
+    "enabled": true
+  }
+}

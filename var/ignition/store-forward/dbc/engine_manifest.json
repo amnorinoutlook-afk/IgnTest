@@ -1,4 +1,11 @@
 {
   "engineId": "dbc",
-  "flavorToStorageKeys": {}
+  "flavorToStorageKeys": {
+    "tag_history_data": [
+      {
+        "engineId": "dbc",
+        "sinkId": "asd"
+      }
+    ]
+  }
 }
